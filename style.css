@@ -1,0 +1,57 @@
+@keyframes body {
+    from {background-color:transparent;}
+    to {background-color: wheat;}
+  }
+  
+  body{
+    background-color: wheat;
+    animation-name: body;
+    animation-duration: 4s;
+  }
+  
+  @keyframes reg {
+    from {background-color: transparent;}
+    to {background-color: thistle;}
+    from {margin-top: 0;}
+    to {margin-top: 5rem;}
+  }
+  
+  
+  .container-fluid {
+    margin: 5rem auto;
+    width: fit-content;
+    background-color:thistle;
+    box-shadow: 10px 10px 5px 0px rgb(237 232 237);
+    animation-name: reg;
+    animation-duration: 4s;
+  }
+  
+  
+  
+  .title {
+    text-align: center;
+  }
+  
+  .registration-form {
+    width: 900px;
+    margin: auto;
+  }
+  
+  .submit-btn {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width:300px) and (max-width:1000px) {
+    .container-fluid{
+      margin: 20rem auto;
+      animation-name: reg;
+      animation-duration: 4s;
+    }
+    @keyframes reg {
+      from {background-color: transparent;}
+      to {background-color: thistle;}
+      from {margin-top: 0;}
+      to {margin-top: 20rem;}
+    }
+  }
